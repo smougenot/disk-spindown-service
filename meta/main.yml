@@ -22,9 +22,9 @@ galaxy_info:
   # https://galaxy.ansible.com/api/v1/platforms/
   #
   platforms:
-    - name: Proxmox
-      versions:
-        - 'all'
+#    - name: Proxmox
+#      versions:
+#        - 'all'
 
   galaxy_tags: ['proxmox', 'nas', 'disk', 'energysaving', 'spindown']
 
