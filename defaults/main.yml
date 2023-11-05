@@ -1,6 +1,10 @@
 ---
 # defaults file for disk_spindown
 
+required_packages:
+  - iostat
+  - sysstat
+
 script_destination_dir: /opt/
 script_owner: root
 script_group: root
