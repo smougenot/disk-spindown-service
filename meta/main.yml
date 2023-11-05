@@ -26,6 +26,6 @@ galaxy_info:
       versions:
         - 8
 
-  galaxy_tags: [ 'Proxmox', 'NAS', 'Disk', 'Energy Saving', 'spindown' ]
+  galaxy_tags: ['proxmox', 'nas', 'disk', 'energy saving', 'spindown']
 
-dependencies: [ ]
+dependencies: []
