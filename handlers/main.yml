@@ -4,4 +4,4 @@
   ansible.builtin.systemd:
     name: disk_spindown
     state: started
-    enabled: yes
+    enabled: true
