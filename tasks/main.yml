@@ -1,0 +1,20 @@
+---
+# tasks file for disk_spindown
+
+- name: Copy script
+  copy:
+    src: spindown_timer.sh
+    dest: "{{ script_destination_dir }}/"
+    owner: "{{ script_owner }}"
+    group: "{{ script_group }}"
+    mode: "{{ script_mode }}"
+
+# Declare systemd service
+- name: Copy systemd service description
+  template:
+    src: disk_spindown.j2.service
+    dest: /etc/systemd/system/disk_spindown.service
+    owner: root
+    group: root
+  notify:
+    - Start disk_spindown

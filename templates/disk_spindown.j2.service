@@ -1,0 +1,10 @@
+[Unit]
+Description=Disk spin down
+
+[Service]
+User={{ script_owner }}
+Group={{ script_group }}
+ExecStart={{ script_destination_dir }}/spindown_timer.sh {{ script_options }}
+
+[Install]
+WantedBy=multi-user.target

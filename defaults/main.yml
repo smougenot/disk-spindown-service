@@ -1,0 +1,11 @@
+---
+# defaults file for disk_spindown
+
+script_destination_dir: /opt/
+script_owner: root
+script_group: root
+script_mode: 0500
+
+# Options to run the script : see documentation
+# Default : spin down a disk after 50s of standby, check status every 20s, display check status in logs
+script_options: "-t 50 -p 20 -c"

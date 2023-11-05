@@ -1,0 +1,7 @@
+---
+# handlers file for disk_spindown
+- name: Start disk_spindown
+  systemd:
+    name: disk_spindown
+    state: started
+    enabled: yes
