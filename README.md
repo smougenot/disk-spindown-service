@@ -28,7 +28,8 @@ Please refer to original project for details/changes.
 
 ```bash
 Usage:
-  spindown_timer.sh [-h] [-q] [-v] [-d] [-m] [-u <MODE>] [-t <TIMEOUT>] [-p <POLL_TIME>] [-i <DRIVE>] [-s <TIMEOUT>]
+  spindown_timer.sh [-h] [-q] [-v] [-d] [-m] [-u <MODE>] [-t <TIMEOUT>]
+                    [-p <POLL_TIME>] [-i <DRIVE>] [-s <TIMEOUT>]
 
 Monitors drive I/O and forces HDD spindown after a given idle period.
 Resistant to S.M.A.R.T. reads.
@@ -79,13 +80,10 @@ spindown_timer.sh -u zpool -i freenas-boot
 Example Playbook
 ----------------
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for
-users too:
-
 ```yaml
     - hosts: servers
       roles:
-        - { role: username.rolename, x: 42 }
+      - { role: disks-spindown, tags: spindown }
 ```
 
 License
