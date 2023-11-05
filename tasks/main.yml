@@ -1,0 +1,21 @@
+---
+# tasks file for disk_spindown
+
+- name: Copy script
+  ansible.builtin.copy:
+    src: spindown_timer.sh
+    dest: "{{ script_destination_dir }}/"
+    owner: "{{ script_owner }}"
+    group: "{{ script_group }}"
+    mode: "{{ script_mode }}"
+
+# Declare systemd service
+- name: Copy systemd service description
+  ansible.builtin.template:
+    src: disk_spindown.j2.service
+    dest: /etc/systemd/system/disk_spindown.service
+    owner: root
+    group: root
+    mode: '444'
+  notify:
+    - Start disk_spindown

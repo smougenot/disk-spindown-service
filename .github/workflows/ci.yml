@@ -37,3 +37,5 @@ jobs:
           VALIDATE_ALL_CODEBASE: false
           DEFAULT_BRANCH: master
           IGNORE_GITIGNORED_FILES: true
+          FILTER_REGEX_EXCLUDE: files/spindown_timer\.sh
+          ANSIBLE_DIRECTORY: ./

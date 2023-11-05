@@ -1,0 +1,7 @@
+---
+# handlers file for disk_spindown
+- name: Start disk_spindown
+  ansible.builtin.systemd:
+    name: disk_spindown
+    state: started
+    enabled: true
