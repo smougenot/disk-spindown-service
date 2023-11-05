@@ -20,7 +20,7 @@ Dependencies
 ------------
 
 Base on the work in
-project https://github.com/ngandrass/truenas-spindown-timer/blob/master/README.md[truenas-spindown-timer]
+project [truenas-spindown-timer](https://github.com/ngandrass/truenas-spindown-timer/blob/master/README.md)
 
 ### Script usage
 
