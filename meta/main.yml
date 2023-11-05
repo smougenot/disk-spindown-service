@@ -24,7 +24,7 @@ galaxy_info:
   platforms:
     - name: Proxmox
       versions:
-        - '8.0.4'
+        - 'all'
 
   galaxy_tags: ['proxmox', 'nas', 'disk', 'energysaving', 'spindown']
 
