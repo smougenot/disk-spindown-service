@@ -1,3 +1,4 @@
+---
 galaxy_info:
   author: Sylvain Mougenot
   description: Add a service to spindown disks after a period of standby
@@ -21,10 +22,10 @@ galaxy_info:
   # https://galaxy.ansible.com/api/v1/platforms/
   #
   platforms:
-  - name: Proxmox
-    versions:
-    - 8
+    - name: Proxmox
+      versions:
+        - 8
 
-  galaxy_tags: [ 'Proxmox', 'NAS', 'Disk', 'Energy Saving', 'spindown']
+  galaxy_tags: [ 'Proxmox', 'NAS', 'Disk', 'Energy Saving', 'spindown' ]
 
 dependencies: [ ]
