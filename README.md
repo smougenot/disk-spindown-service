@@ -1,5 +1,6 @@
 Role Name
 =========
+
 [![Cotinuous Integration](https://github.com/smougenot/disk-spindown-service/actions/workflows/ci.yml/badge.svg)](https://github.com/smougenot/disk-spindown-service/actions/workflows/ci.yml)
 
 Goal is to spindown disk drives after a certain duration of standby. This saves energy.
