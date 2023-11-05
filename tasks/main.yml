@@ -16,5 +16,6 @@
     dest: /etc/systemd/system/disk_spindown.service
     owner: root
     group: root
+    mode: '444'
   notify:
     - Start disk_spindown
