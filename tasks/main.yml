@@ -1,6 +1,11 @@
 ---
 # tasks file for disk_spindown
 
+- name: Install needed tools
+  ansible.builtin.package:
+    name: required_packages
+    state: present
+
 - name: Copy script
   ansible.builtin.copy:
     src: spindown_timer.sh
