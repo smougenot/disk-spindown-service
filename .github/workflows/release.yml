@@ -10,9 +10,6 @@ name: Release
     tags:
       - '*'
 
-env:
-  PIPENV_VENV_IN_PROJECT: 0
-
 jobs:
 
   release:
@@ -28,6 +25,9 @@ jobs:
           python-version: '3.x'
           cache: 'pipenv'
           cache-dependency-path: 'Pipfile.lock'
+
+      - name: GH cache workaround
+        run: mkdir -p -- "$(pip cache dir)"
 
       - name: Trigger a new import on Galaxy.
         run: >-
