@@ -10,6 +10,9 @@ name: Release
     tags:
       - '*'
 
+env:
+  PIPENV_VENV_IN_PROJECT: 0
+
 jobs:
 
   release:
